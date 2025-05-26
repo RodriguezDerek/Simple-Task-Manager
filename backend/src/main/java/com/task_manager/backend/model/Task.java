@@ -35,11 +35,6 @@ public class Task {
     @NotBlank(message = "Description is required")
     private String description;
 
-    @Column(name = "due_date", nullable = false)
-    @NotNull(message = "Due Date is required")
-    private LocalDate dueDate;
-
-    @Column(name = "file_url", nullable = false)
-    @NotBlank(message = "File URL is required")
-    private String fileURL;
+    @Column(name = "file_key")
+    private String fileKey;
 }
